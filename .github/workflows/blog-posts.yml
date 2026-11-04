@@ -1,0 +1,23 @@
+name: Latest blog posts
+
+# Writes the newest posts from the blog RSS feed into README.md
+# (between the BLOG-POST-LIST markers).
+# The blog is not live yet, so this only runs by hand for now.
+# After the first post ships, uncomment the schedule below.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "17 1 * * *"   # every day, 01:17 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://john-liu-dev.github.io/rss.xml"
+          max_post_count: 5
