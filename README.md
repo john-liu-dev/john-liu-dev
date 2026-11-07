@@ -9,6 +9,8 @@ I work on LLM and agentic inference at NVIDIA: making models answer faster and a
 
 **Now** · multimodal serving (Qwen3-VL video) on Dynamo + TensorRT-LLM · encode / prefill / decode disaggregation · KV-aware decode routing · agentic workloads
 
+**Side project** · [HackerShelf](https://john-liu-dev.github.io/shelf/) · papers and free books Hacker News kept recommending over 20 years, with Chinese reading guides · [how it's built](https://github.com/john-liu-dev/open-hackershelf)
+
 #### Writing
 
 <!-- BLOG-POST-LIST:START -->
