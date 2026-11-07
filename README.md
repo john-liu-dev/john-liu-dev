@@ -21,7 +21,7 @@ I work on LLM and agentic inference at NVIDIA: making models answer faster and a
 
 PRs and issues from multimodal, disaggregated serving and KV-aware routing.
 
-- [ai-dynamo/dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) · draft: opt-in decode routing that prefers DP ranks with enough KV capacity for the request ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223))
+- [ai-dynamo/dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) · opt-in decode routing that prefers DP ranks with enough KV capacity for the request ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223))
 - [ai-dynamo/dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943) · fix: drop `cache_transceiver_config` from the LLaVA TRT-LLM aggregated config
 - [ai-dynamo/dynamo#16768](https://github.com/ai-dynamo/dynamo/issues/16768) · multimodal preprocessing on the worker event loop freezes token streaming
 - [ai-dynamo/dynamo#16154](https://github.com/ai-dynamo/dynamo/issues/16154) · PD disaggregation: the decode worker re-loads and re-encodes every `video_url`
