@@ -3,7 +3,7 @@
   <img alt="Yuehua Liu — Making LLMs answer faster and agents wait less." src="assets/banner-light.svg" width="100%">
 </picture>
 
-I work on LLM and agentic inference at NVIDIA: making models answer faster and agents wait less. I also keep an eye on what people build with agents.
+I work on LLM and agentic inference: making models answer faster and agents wait less. I also keep an eye on what people build with agents.
 
 做LLM和Agentic推理优化，让模型答得快一点、agent少等一会儿，也关注agent应用
 
