@@ -19,13 +19,38 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 
 #### Upstream field notes
 
-PRs and issues from multimodal, disaggregated serving and KV-aware routing.
+[All PRs](https://github.com/search?q=is%3Apr%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=pullrequests) · [All issues](https://github.com/search?q=is%3Aissue%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=issues)
 
-- **Merged** · 2026-11-11 (UTC+8) · [ai-dynamo/dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442) · accept Qwen3-VL requests with both an image and a video on the TRT-LLM backend ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441))
-- **Merged** · 2026-11-11 (UTC+8) · [ai-dynamo/dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943) · drop `cache_transceiver_config` from the LLaVA TRT-LLM aggregated config
-- Reported issue · **Fixed upstream** · 2026-11-13 (UTC+8) · [NVIDIA/TensorRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) · reported missing video timestamps and frame markers in Qwen3-VL's native Python E/PD API; fixed in [#20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)
-- Open PR · [ai-dynamo/dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600) · honor the model's preferred video format for video-only and mixed-media requests ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599))
-- Open PR · [ai-dynamo/dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) · opt-in decode routing that prefers DP ranks with enough KV capacity for the request ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223))
-- Reported issue · [ai-dynamo/dynamo#16768](https://github.com/ai-dynamo/dynamo/issues/16768) · multimodal preprocessing on the worker event loop freezes token streaming
+- **Merged** · [Dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442) image + video support · [#17943](https://github.com/ai-dynamo/dynamo/pull/17943) LLaVA config cleanup.
+- Open PR · [Dynamo#19016](https://github.com/ai-dynamo/dynamo/pull/19016) idempotent FileStore delete ([issue #19014](https://github.com/ai-dynamo/dynamo/issues/19014)).
+- Open PR · [Dynamo#19013](https://github.com/ai-dynamo/dynamo/pull/19013) Mocker timing docs ([issue #19012](https://github.com/ai-dynamo/dynamo/issues/19012)).
+- Open PR · [Dynamo#19011](https://github.com/ai-dynamo/dynamo/pull/19011) contributor label links ([issue #19007](https://github.com/ai-dynamo/dynamo/issues/19007)).
+- Open PR · [Dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600) video format · [#18224](https://github.com/ai-dynamo/dynamo/pull/18224) KV-capacity routing.
+- Reported · **Fixed upstream** · [TRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) native Python video E/PD layout ([fix #20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)).
+
+<details>
+<summary>Full contribution list</summary>
+
+**Dynamo · pull requests**
+
+- Open PR · [#19016](https://github.com/ai-dynamo/dynamo/pull/19016) — idempotent FileStore delete ([issue #19014](https://github.com/ai-dynamo/dynamo/issues/19014); open).
+- Open PR · [#19013](https://github.com/ai-dynamo/dynamo/pull/19013) — Mocker `--speedup-ratio 0` timing docs ([issue #19012](https://github.com/ai-dynamo/dynamo/issues/19012); open).
+- Open PR · [#19011](https://github.com/ai-dynamo/dynamo/pull/19011) — contributor label links ([issue #19007](https://github.com/ai-dynamo/dynamo/issues/19007); open).
+- Open PR · [#18600](https://github.com/ai-dynamo/dynamo/pull/18600) — model-preferred video format ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599); open).
+- **Merged · 2026-11-11 (UTC+8)** · [#18442](https://github.com/ai-dynamo/dynamo/pull/18442) — mixed image/video requests ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441); closed).
+- Open PR · [#18224](https://github.com/ai-dynamo/dynamo/pull/18224) — KV-capacity-aware decode selection ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223); open).
+- **Merged · 2026-11-11 (UTC+8)** · [#17943](https://github.com/ai-dynamo/dynamo/pull/17943) — unused LLaVA transceiver config ([issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015); closed).
+- Closed, not merged · [#17016](https://github.com/ai-dynamo/dynamo/pull/17016) — Qwen3-VL transceiver config ([issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015); closed).
+
+**Additional reports**
+
+- Open issue · [Dynamo#16768](https://github.com/ai-dynamo/dynamo/issues/16768) — multimodal preprocessing blocks token streaming.
+- Open issue · [Dynamo#16156](https://github.com/ai-dynamo/dynamo/issues/16156) — synthetic-video overflow with NumPy 2.
+- Open issue · [TRT-LLM#20141](https://github.com/NVIDIA/TensorRT-LLM/issues/20141) — video sampling and timestamp metadata.
+- Open issue · [Dynamo#16155](https://github.com/ai-dynamo/dynamo/issues/16155) — encode-worker request-ack timeout.
+- Open issue · [Dynamo#16154](https://github.com/ai-dynamo/dynamo/issues/16154) — redundant decode-side video processing.
+- **Fixed upstream · 2026-11-13 (UTC+8)** · [TRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) — video timestamps and frame markers in native Python E/PD ([upstream fix #20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)).
+
+</details>
 
 <sub>[NVIDIA 博客作者页](https://blogs.nvidia.cn/blog/author/liujohn/) · Views are my own.</sub>
