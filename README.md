@@ -21,14 +21,14 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 
 **Merged PRs**
 
+- **Merged** · **[Dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600)** · use uint8 frames for video-only requests when the model expects NumPy video ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599)).
 - **Merged** · **[Dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442)** · Qwen3-VL image + video input ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441)).
 - **Merged** · **[Dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943)** · remove unused LLaVA transceiver config ([related issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015)).
 
 **Open work & reports**
 
 - Open PR · [Dynamo#19016](https://github.com/ai-dynamo/dynamo/pull/19016) idempotent FileStore delete ([issue #19014](https://github.com/ai-dynamo/dynamo/issues/19014)).
-- Open docs PRs · [Dynamo#19013](https://github.com/ai-dynamo/dynamo/pull/19013) Mocker timing ([issue #19012](https://github.com/ai-dynamo/dynamo/issues/19012)) · [#19011](https://github.com/ai-dynamo/dynamo/pull/19011) label links ([issue #19007](https://github.com/ai-dynamo/dynamo/issues/19007)).
-- Open PR · [Dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600) video format · [#18224](https://github.com/ai-dynamo/dynamo/pull/18224) KV-capacity routing.
+- Open PR · [Dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) KV-capacity routing ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223)).
 - Reported · **Fixed upstream** · [TRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) native Python video E/PD layout ([fix #20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)).
 
 [Merged PRs](https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=pullrequests) · [All PRs](https://github.com/search?q=is%3Apr%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=pullrequests) · [All issues](https://github.com/search?q=is%3Aissue%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=issues)
@@ -38,12 +38,12 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 
 **Dynamo · pull requests**
 
+- **Merged · 2026-11-25 (UTC+8)** · [#18600](https://github.com/ai-dynamo/dynamo/pull/18600) — use uint8 frames for video-only requests when the model expects NumPy video ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599); closed).
 - **Merged · 2026-11-11 (UTC+8)** · [#18442](https://github.com/ai-dynamo/dynamo/pull/18442) — mixed image/video requests ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441); closed).
 - **Merged · 2026-11-11 (UTC+8)** · [#17943](https://github.com/ai-dynamo/dynamo/pull/17943) — unused LLaVA transceiver config ([issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015); closed).
 - Open PR · [#19016](https://github.com/ai-dynamo/dynamo/pull/19016) — idempotent FileStore delete ([issue #19014](https://github.com/ai-dynamo/dynamo/issues/19014); open).
 - Open PR · [#19013](https://github.com/ai-dynamo/dynamo/pull/19013) — Mocker `--speedup-ratio 0` timing docs ([issue #19012](https://github.com/ai-dynamo/dynamo/issues/19012); open).
 - Open PR · [#19011](https://github.com/ai-dynamo/dynamo/pull/19011) — contributor label links ([issue #19007](https://github.com/ai-dynamo/dynamo/issues/19007); open).
-- Open PR · [#18600](https://github.com/ai-dynamo/dynamo/pull/18600) — model-preferred video format ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599); open).
 - Open PR · [#18224](https://github.com/ai-dynamo/dynamo/pull/18224) — KV-capacity-aware decode selection ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223); open).
 - Closed, not merged · [#17016](https://github.com/ai-dynamo/dynamo/pull/17016) — Qwen3-VL transceiver config ([issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015); closed).
 
