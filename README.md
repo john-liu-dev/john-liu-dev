@@ -21,13 +21,13 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 
 **Merged PRs**
 
+- **Merged** · **[AIPerf#1766](https://github.com/ai-dynamo/aiperf/pull/1766)** · replay synthetic images and videos across DAG branches.
 - **Merged** · **[Dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600)** · use uint8 frames for video-only requests when the model expects NumPy video ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599)).
 - **Merged** · **[Dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442)** · Qwen3-VL image + video input ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441)).
 - **Merged** · **[Dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943)** · remove unused LLaVA transceiver config ([related issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015)).
 
 **Open work & reports**
 
-- Open PR · [AIPerf#1766](https://github.com/ai-dynamo/aiperf/pull/1766) replay synthetic images and videos across DAG branches.
 - Open PR · [Dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) KV-capacity routing ([issue #18223](https://github.com/ai-dynamo/dynamo/issues/18223)).
 - Reported · **Fixed upstream** · [TRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) native Python video E/PD layout ([fix #20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)).
 
@@ -38,10 +38,10 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 
 **Pull requests**
 
+- **Merged · 2026-11-28 (UTC+8)** · [AIPerf#1766](https://github.com/ai-dynamo/aiperf/pull/1766) — replay the same synthetic images and videos across turns and branches in `dag_jsonl` benchmarks.
 - **Merged · 2026-11-25 (UTC+8)** · [Dynamo#18600](https://github.com/ai-dynamo/dynamo/pull/18600) — use uint8 frames for video-only requests when the model expects NumPy video ([issue #18599](https://github.com/ai-dynamo/dynamo/issues/18599); closed).
 - **Merged · 2026-11-11 (UTC+8)** · [Dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442) — mixed image/video requests ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441); closed).
 - **Merged · 2026-11-11 (UTC+8)** · [Dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943) — unused LLaVA transceiver config ([issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015); closed).
-- Open PR · [AIPerf#1766](https://github.com/ai-dynamo/aiperf/pull/1766) — replay the same synthetic images and videos across turns and branches in `dag_jsonl` benchmarks.
 - Open PR · [Dynamo#19016](https://github.com/ai-dynamo/dynamo/pull/19016) — idempotent FileStore delete ([issue #19014](https://github.com/ai-dynamo/dynamo/issues/19014); open).
 - Open PR · [Dynamo#19013](https://github.com/ai-dynamo/dynamo/pull/19013) — Mocker `--speedup-ratio 0` timing docs ([issue #19012](https://github.com/ai-dynamo/dynamo/issues/19012); open).
 - Open PR · [Dynamo#19011](https://github.com/ai-dynamo/dynamo/pull/19011) — contributor label links ([issue #19007](https://github.com/ai-dynamo/dynamo/issues/19007); open).
