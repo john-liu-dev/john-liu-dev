@@ -26,9 +26,18 @@ I work on LLM and agentic inference: making models answer faster and agents wait
 - **Merged** · **[Dynamo#18442](https://github.com/ai-dynamo/dynamo/pull/18442)** · Qwen3-VL image + video input ([issue #18441](https://github.com/ai-dynamo/dynamo/issues/18441)).
 - **Merged** · **[Dynamo#17943](https://github.com/ai-dynamo/dynamo/pull/17943)** · remove unused LLaVA transceiver config ([related issue #17015](https://github.com/ai-dynamo/dynamo/issues/17015)).
 
-**Open work & reports**
+**Open PRs**
 
-- Open PR · [AIPerf#1768](https://github.com/ai-dynamo/aiperf/pull/1768) size synthetic images and videos by visual token count.
+| PR | Proposed change | Issue |
+| --- | --- | --- |
+| [AIPerf#1768](https://github.com/ai-dynamo/aiperf/pull/1768) | Size synthetic images and videos by visual token count. | — |
+| [Dynamo#19016](https://github.com/ai-dynamo/dynamo/pull/19016) | Let FileStore delete a missing key without an error. | [#19014](https://github.com/ai-dynamo/dynamo/issues/19014) |
+| [Dynamo#19013](https://github.com/ai-dynamo/dynamo/pull/19013) | Clarify that the Mocker runs at normal speed with `--speedup-ratio 0`. | [#19012](https://github.com/ai-dynamo/dynamo/issues/19012) |
+| [Dynamo#19011](https://github.com/ai-dynamo/dynamo/pull/19011) | Fix contributor guide links to the “good first issue” and “help wanted” labels. | [#19007](https://github.com/ai-dynamo/dynamo/issues/19007) |
+| [Dynamo#18224](https://github.com/ai-dynamo/dynamo/pull/18224) | Select decode workers by available KV cache capacity. | [#18223](https://github.com/ai-dynamo/dynamo/issues/18223) |
+
+**Reports**
+
 - Reported · **Fixed upstream** · [TRT-LLM#20138](https://github.com/NVIDIA/TensorRT-LLM/issues/20138) native Python video E/PD layout ([fix #20497](https://github.com/NVIDIA/TensorRT-LLM/pull/20497)).
 
 [Merged PRs](https://github.com/search?q=is%3Apr%20is%3Amerged%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=pullrequests) · [All PRs](https://github.com/search?q=is%3Apr%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=pullrequests) · [All issues](https://github.com/search?q=is%3Aissue%20author%3Ajohn-liu-dev%20-user%3Ajohn-liu-dev%20is%3Apublic%20sort%3Acreated-desc&type=issues)
